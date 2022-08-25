@@ -1,9 +1,28 @@
+import React from 'react';
 import './App.css';
+import Nav from  '../Nav/Nav'
+import Footer from '../Footer/Footer'
 
-function App() {
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      individualMovieCard: []
+
+    }
+  }
+
+
+
+
+  render() {
   return (
-    null
+    <div>
+      <Nav />
+      <Footer />
+    </div>
   );
+  }
 }
 
 export default App;
