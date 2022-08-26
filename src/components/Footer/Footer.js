@@ -1,6 +1,10 @@
-const Footer = () => {
+import './Footer.css'
+
+const Footer = ( ) => {
   return (
-    <h1>Footer Stuff</h1>
+    <div className="footer-container">
+      <h4>Developed By Anthony Shellman & Jordan Farelli</h4>
+    </div>
   )
 }
 

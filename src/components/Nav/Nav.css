@@ -1,11 +1,30 @@
 .navbar {
+  font-family: 'Italiana', serif;
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tainted-peach-image {
+  height: 100%;
+  border-radius: 50px;
+  margin-right: 10px;
+  box-shadow: 0 0 25px #FF69B4;
 }
 
 .nav-title {
   margin-right: auto;
+  color: whitesmoke;
+  font-size: 60px;
+  text-shadow: 0 0 25px #FF69B4;
 }
+
+/* .nav-tagline {
+  color: whitesmoke;
+  font-size: 44px;
+} */

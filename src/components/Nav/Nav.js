@@ -1,18 +1,20 @@
-import tainted from '../../assets/tainted.jpeg'
 import './Nav.css'
+import tainted from '../../assets/tainted.jpeg'
 
-const Nav = () => {
+const Nav = ( ) => {
+
   return (
     <div className="navbar">
-      <img src={tainted} alt='Tainted peach logo' className="logo"></img>
+      <img 
+        src={ tainted } 
+        alt='tainted-peach-logo' 
+        className="tainted-peach-image"/>
       <h1 className="nav-title">Tainted Peaches</h1>
-      <p className="tagline">We got movies!</p>
+      {/* <p className="nav-tagline">We got movies!</p> */}
     </div>
   )
+
 }
-
-
-
 
 
 export default Nav
