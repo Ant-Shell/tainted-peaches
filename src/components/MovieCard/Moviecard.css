@@ -5,10 +5,12 @@
 .movie-card-image {
     width: 90%;
     border-radius: 5px;
+    box-shadow: 0 1px 15px 2px rgba( 0, 0, 0, 0.7 );
 }
 
 .movie-card-image:hover {
-    box-shadow: 0 5px 15px 5px rgba( 0, 0, 0, 0.7 );
-    /* box-shadow: 0 5px 15px 5px #FF69B4; */
+    /* box-shadow: 0 1px 20px 2px rgb( 240, 46, 170 ); */
+    box-shadow: 0 1px 20px 2px rgb( 0, 0, 0 );
+    cursor: pointer;
 }
 
