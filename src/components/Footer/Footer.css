@@ -1,15 +1,33 @@
 h4 {
-    color: whitesmoke;
-    margin: 10px;
+    margin: 5px;
     text-shadow: 0 0 25px #FF69B4;
+    font-size: 12px;
 }
 
 .footer-container {
     font-family: 'Italiana', serif;
+    color: whitesmoke;
     display: flex;
-    justify-content: center;
-    margin-left: auto;
-    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
     background-color: rgba( 0, 0, 0, 0.8 );
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+.jordan-container,
+.anthony-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.linkedin-icon,
+.github-icon {
+    width: 5%;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(216deg) brightness(108%) contrast(101%);
 }
 
