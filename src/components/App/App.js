@@ -1,31 +1,38 @@
-import React from 'react';
 import './App.css';
+import React from 'react';
+
 import Nav from  '../Nav/Nav'
-import MovieCardCollection from '../MovieCardsCollection/MovieCardsCollection'
 import Footer from '../Footer/Footer'
+import MovieCardsCollection from '../MovieCardsCollection/MovieCardsCollection'
+
 import data from "../../fakedata"
-console.log('App', data.movies)
+
+
 class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      individualMovieCard: data.movies
 
-    }
+  constructor( ) {
+    super( )
+    this.state = 
+      {
+        individualMovieCard: data.movies
+      }
   }
 
+  render( ) {
+    return (
+      <div className='app-container'>
 
+        <Nav />
 
+        <MovieCardsCollection 
+          individualMovieCard={ this.state.individualMovieCard }/>
 
-  render() {
-  return (
-    <div>
-      <Nav />
-      <MovieCardCollection individualMovieCard={this.state.individualMovieCard} />
-      <Footer />
-    </div>
-  );
+        <Footer />
+
+      </div>
+    )
   }
+
 }
 
 export default App;

@@ -1,10 +1,13 @@
 import './MovieCard.css'
 
-const MovieCard = ({ posterPath, id }) => {
-  console.log('MovieCard', id)
+const MovieCard = ( { posterPath, id } ) => {
+  
   return (
-    <div key={id}>
-      <img src={posterPath} alt="poster" />
+    <div className='individual-movie-card' key={ id }>
+      <img 
+        className='movie-card-image' 
+        src={ posterPath } 
+        alt="poster" />
     </div>
   )
 
