@@ -1,6 +1,6 @@
 import './MovieCard.css'
 
-const MovieCard = ( { title, posterPath, id, displaySingleMovie } ) => {
+const MovieCard = ( { title, posterPath, id, displaySingleMovie, toggleHomeButton } ) => {
   
   
   return (

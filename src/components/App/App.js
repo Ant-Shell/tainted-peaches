@@ -15,7 +15,8 @@ class App extends React.Component {
     this.state = 
       {
         movieCards: [ ],
-        movieSelected: ''
+        movieSelected: '',
+        homeButton: false
       }
     }
     
@@ -27,25 +28,24 @@ class App extends React.Component {
     displaySingleMovie = ( id ) => {
         const singleMovie = this.state.movieCards.find( movie => movie.id === id  )
         this.setState( { movieSelected: singleMovie } )
+        this.setState( { homeButton: true } )
     }
+
+   
 
   render( ) {
-    let display;
-    if ( this.state.movieSelected ) {
-      display = <MovieDetails selectedMovie={ this.state.movieSelected }/> 
-    } else {
-      display = <MovieCardsCollection 
-      movieCards={ this.state.movieCards }
-      displaySingleMovie={ this.displaySingleMovie }/>
+
+    const returnHome = ( ) => {
+      this.setState( { homeButton: false } )
     }
-
-
+    
     return (
       <div className='app-container'>
 
-        <Nav />
+        <Nav homeButton={ this.state.homeButton } returnHome={ returnHome }/>
 
-        { display }
+        {this.state.homeButton ? <MovieDetails selectedMovie={ this.state.movieSelected }/> : <MovieCardsCollection 
+        movieCards={ this.state.movieCards } displaySingleMovie={ this.displaySingleMovie }/>}
 
         <Footer />
 
