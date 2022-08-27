@@ -12,7 +12,7 @@ h4 {
     align-items: center;
     height: 25px;
     background-color: rgba( 0, 0, 0, 0.8 );
-    position: sticky;
+    position: fixed;
     bottom: 0;
     z-index: 100;
 }
