@@ -1,7 +1,8 @@
 import './MovieCardsCollection.css'
 import MovieCard from '../MovieCard/MovieCard'
 
-const MovieCardsCollection = ( { movieCards } ) => {
+const MovieCardsCollection = ( { movieCards, displaySingleMovie } ) => {
+
   const movieCard = movieCards.map( card => {
     return (
       <MovieCard 
@@ -9,9 +10,11 @@ const MovieCardsCollection = ( { movieCards } ) => {
       posterPath={ card.poster_path }
       id={ card.id }
       key={ card.id }
+      displaySingleMovie={ displaySingleMovie }
       />
     )
-  })
+  } )
+
   return (
     <div className="movie-card-collection">
       { movieCard }
