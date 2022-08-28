@@ -1,7 +1,46 @@
-.movie-details {
+p {
+    font-size: 25px;
+}
+
+.movie-details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
     font-family: 'Italiana', serif;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    position: relative;
+}
+
+.movie-details { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    color: whitesmoke;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.movie-title {
+    font-size: 50px;
+    position: absolute;
+    top: -20%;
+}
+
+.movie-trailer {
+    /* margin-bottom: 5px; */
+    position: absolute;
+    top: 60%;
+    margin: 0;
+    /* bottom: 5px; */
+
+}
+
+.poster-image {
+    height: 100%;
+    width: 100%;
+    filter: brightness(40%);
 }
