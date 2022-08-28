@@ -1,7 +1,7 @@
 import './Nav.css'
 import tainted from '../../assets/tainted.jpeg'
 
-const Nav = ( {homeButton, returnHome}) => {
+const Nav = ( { homeButton, returnHome } ) => {
   return (
     <div className="navbar">
       <img 
