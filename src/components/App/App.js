@@ -31,8 +31,6 @@ class App extends React.Component {
         this.setState( { homeButton: true } )
     }
 
-   
-
   render( ) {
 
     const returnHome = ( ) => {
@@ -44,8 +42,10 @@ class App extends React.Component {
 
         <Nav homeButton={ this.state.homeButton } returnHome={ returnHome }/>
 
-        {this.state.homeButton ? <MovieDetails selectedMovie={ this.state.movieSelected }/> : <MovieCardsCollection 
-        movieCards={ this.state.movieCards } displaySingleMovie={ this.displaySingleMovie }/>}
+        { this.state.homeButton 
+          ? <MovieDetails selectedMovie={ this.state.movieSelected }/> 
+          : <MovieCardsCollection 
+              movieCards={ this.state.movieCards } displaySingleMovie={ this.displaySingleMovie }/> }
 
         <Footer />
 
