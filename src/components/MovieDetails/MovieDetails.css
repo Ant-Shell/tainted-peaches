@@ -30,10 +30,22 @@ p {
     top: -20%;
 }
 
+.movie-overview {
+    font-size: 40px;
+}
+
+.info,
+.release-date,
+.genre,
+.runtime,
+.average-rating {
+    font-size: 30px;
+}
+
 .movie-trailer {
     /* margin-bottom: 5px; */
     position: absolute;
-    top: 60%;
+    top: 48%;
     margin: 0;
     /* bottom: 5px; */
 
