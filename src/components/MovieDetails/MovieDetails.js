@@ -34,13 +34,18 @@ class MovieDetails extends React.Component {
                             className='poster-image'/>
                     <div className='movie-details'>
                         <h1 className='movie-title'>{ this.state.movieSelected.title }</h1>
-                            <p className="movie-overview">Movie Overview:</p>
-                            <p className="info">{ this.state.movieSelected.overview }</p>
-                            <p className="release-date">Release Date: { this.state.movieSelected.release_date }</p>
-                            <p className="genre">Genre: { this.state.movieSelected.genres }</p>
-                            <p className="runtime">Runtime: { this.state.movieSelected.runtime } minutes</p>
-                            <p className="average-rating">Average Rating: { parseInt( this.state.movieSelected.average_rating ).toFixed( 1 ) }</p>
-                            { this.state.movieSelected.budget > 0 && <p>Budget: ${ parseInt( this.state.movieSelected.budget ).toLocaleString() }</p> }
+                            <h2 className="movie-overview">Movie Overview:</h2>
+                                <p className="info">{ this.state.movieSelected.overview }</p>
+                            <h2 className="release-date">Release Date:</h2>
+                                <p className="info">{ this.state.movieSelected.release_date }</p>
+                            <h2 className="genre">Genre:</h2>
+                                <p className="info">{ this.state.movieSelected.genres }</p>
+                            <h2 className="runtime">Runtime:</h2>
+                                <p className="info">{ this.state.movieSelected.runtime } minutes</p>
+                            <h2 className="average-rating">Average Rating:</h2>
+                                <p className="info">{ parseInt( this.state.movieSelected.average_rating ).toFixed( 1 ) }</p>
+                            { this.state.movieSelected.budget > 0 && <h2 className="budget">Budget:</h2> }
+                            { this.state.movieSelected.budget > 0 && <p className="info">${ parseInt( this.state.movieSelected.budget ).toLocaleString() }</p> }
                     </div>
                     
                     <div className='movie-trailer'>
