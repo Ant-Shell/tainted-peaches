@@ -29,7 +29,7 @@ class MovieDetails extends React.Component {
 
                 <div className='movie-details-container'>
                         <img
-                            src={ this.state.movieSelected.poster_path }
+                            src={ this.state.movieSelected.backdrop_path }
                             alt='movie-poster'
                             className='poster-image'/>
                     <div className='movie-details'>
