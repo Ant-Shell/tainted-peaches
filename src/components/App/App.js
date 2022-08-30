@@ -6,6 +6,7 @@ import Nav from  '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import MovieCardsCollection from '../MovieCardsCollection/MovieCardsCollection'
 import MovieDetails from '../MovieDetails/MovieDetails'
+import { Route } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -39,20 +40,15 @@ class App extends React.Component {
     
     return (
       <div className='app-container'>
-
-        <Nav homeButton={ this.state.homeButton } returnHome={ returnHome }/>
-
-        { this.state.homeButton 
-          ? <MovieDetails selectedMovie={ this.state.movieSelected }/> 
-          : <MovieCardsCollection 
-              movieCards={ this.state.movieCards } displaySingleMovie={ this.displaySingleMovie }/> }
-
-        <Footer />
-
+          <Nav homeButton={ this.state.homeButton } returnHome={ returnHome }/>
+          <Route exact path="/" render={() => this.state.homeButton
+            ? <MovieDetails selectedMovie={ this.state.movieSelected }/>
+            : <MovieCardsCollection
+                movieCards={ this.state.movieCards } displaySingleMovie={ this.displaySingleMovie }/> }/>
+          <Footer />
       </div>
     )
   }
-
 }
 
 export default App;
