@@ -6,7 +6,7 @@ import Nav from  '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import MovieCardsCollection from '../MovieCardsCollection/MovieCardsCollection'
 import MovieDetails from '../MovieDetails/MovieDetails'
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -39,14 +39,26 @@ class App extends React.Component {
     }
     
     return (
+    <Switch>
       <div className='app-container'>
-          <Nav homeButton={ this.state.homeButton } returnHome={ returnHome }/>
-          <Route exact path="/" render={() => this.state.homeButton
-            ? <MovieDetails selectedMovie={ this.state.movieSelected }/>
-            : <MovieCardsCollection
-                movieCards={ this.state.movieCards } displaySingleMovie={ this.displaySingleMovie }/> }/>
+
+          <Nav 
+            homeButton={ this.state.homeButton } 
+            returnHome={ returnHome }/>
+
+          <Route exact path="/:id" render={ ( { match } ) => <MovieDetails 
+              selectedMovie={ match.params.id }
+            />
+          }/>
+
+          <Route exact path="/" render={ ( ) => <MovieCardsCollection 
+              movieCards={ this.state.movieCards }
+              displaySingleMovie={ this.displaySingleMovie }/>
+          }/>         
+
           <Footer />
       </div>
+    </Switch>
     )
   }
 }
