@@ -1,6 +1,3 @@
-p {
-    font-size: 25px;
-}
 
 .movie-details-container {
     display: flex;
@@ -19,15 +16,15 @@ p {
     padding: 20px;
     position: absolute;
     color: whitesmoke;
-    top: 30%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .movie-title {
-    font-size: 60px;
     position: absolute;
     top: -20%;
+    white-space: nowrap;
 }
 
 .movie-overview,
@@ -36,26 +33,72 @@ p {
 .runtime,
 .average-rating,
 .budget {
-    font-size: 30px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .info {
-   font-size: 25px;
-   font-weight: bold; 
+   font-weight: bold;
 }
 
 .movie-trailer {
-    /* margin-bottom: 5px; */
     position: absolute;
-    top: 50%;
+    top: 56%;
     margin: 0;
-    /* bottom: 5px; */
-
 }
 
 .poster-image {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     filter: brightness(40%);
+}
+
+@media screen and (min-width: 1500px) {
+    h1  {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    h1  {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    h2  {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    h2  {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    iframe {
+        width: 653px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
 }

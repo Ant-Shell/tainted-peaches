@@ -39,13 +39,13 @@ class App extends React.Component {
     }
     
     return (
-    <Switch>
+
       <div className='app-container'>
 
           <Nav 
             homeButton={ this.state.homeButton } 
             returnHome={ returnHome }/>
-
+          <Switch>
           <Route exact path="/:id" render={ ( { match } ) => <MovieDetails 
               selectedMovie={ match.params.id }
             />
@@ -55,10 +55,11 @@ class App extends React.Component {
               movieCards={ this.state.movieCards }
               displaySingleMovie={ this.displaySingleMovie }/>
           }/>         
+        </Switch>
 
-          <Footer />
+        <Footer />
       </div>
-    </Switch>
+  
     )
   }
 }
