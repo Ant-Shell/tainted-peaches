@@ -10,7 +10,7 @@ const Nav = ( { homeButton, returnHome } ) => {
         alt='tainted-peach-logo' 
         className="tainted-peach-image"/>
       <h1 className="nav-title">Tainted Peaches</h1>
-      <Link to={'/'}onClick={() => returnHome()}>{ homeButton && <button className='nav-home-button'>Take Me Home</button>}</Link>
+      <Link to={'/'}onClick={() => returnHome()}>{ homeButton && <button>Take Me Home</button>}</Link>
     </div>
   )
 
