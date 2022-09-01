@@ -1,5 +1,25 @@
-.navbar {
+button {
+  cursor: pointer;
   font-family: 'Italiana', serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 3px;
+  width: 175px;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+button:active {
+  color: rgb( 240, 46, 170 );
+  border: 2px solid rgb( 240, 46, 170 );
+  box-shadow: rgba(245, 245, 245, 0.4) 0px 5px, rgba(245, 245, 245, 0.3) 0px 10px, rgba(245, 245, 245, 0.2) 0px 15px, rgba(245, 245, 245, 0.1) 0px 20px, rgba(245, 245, 245, 0.05) 0px 25px;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   padding: 15px;
@@ -23,27 +43,6 @@
   color: whitesmoke;
   text-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
   font-size: 60px;
-}
-
-.nav-home-button {
-  cursor: pointer;
-  font-family: 'Italiana', serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 20px;
-  padding: 3px;
-  width: 175px;
-  border-radius: 10px;
-  background-color: black;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-}
-
-.nav-home-button:active {
-  color: rgb( 240, 46, 170 );
-  border: 2px solid rgb( 240, 46, 170 );
-  box-shadow: rgba(245, 245, 245, 0.4) 0px 5px, rgba(245, 245, 245, 0.3) 0px 10px, rgba(245, 245, 245, 0.2) 0px 15px, rgba(245, 245, 245, 0.1) 0px 20px, rgba(245, 245, 245, 0.05) 0px 25px;
 }
 
 /* .nav-home-button:active {

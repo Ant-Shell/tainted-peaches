@@ -46,16 +46,16 @@ class App extends React.Component {
             homeButton={ this.state.homeButton } 
             returnHome={ returnHome }/>
           <Switch>
-          <Route exact path="/:id" render={ ( { match } ) => <MovieDetails 
-              selectedMovie={ match.params.id }
-            />
-          }/>
+            <Route exact path="/:id" render={ ( { match } ) => <MovieDetails 
+                selectedMovie={ match.params.id }
+              />
+            }/>
 
-          <Route exact path="/" render={ ( ) => <MovieCardsCollection 
-              movieCards={ this.state.movieCards }
-              displaySingleMovie={ this.displaySingleMovie }/>
-          }/>         
-        </Switch>
+            <Route exact path="/" render={ ( ) => <MovieCardsCollection 
+                movieCards={ this.state.movieCards }
+                displaySingleMovie={ this.displaySingleMovie }/>
+            }/>         
+          </Switch>
 
         <Footer />
       </div>
