@@ -1,7 +1,7 @@
 h4 {
     margin: 5px;
     text-shadow: 0 0 25px #FF69B4;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .footer-container {
@@ -10,10 +10,11 @@ h4 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 50px;
+    height: 30px;
     width: 100vw;
-    background-color: rgba( 0, 0, 0, 0.8 );
+    background-color: rgba( 0, 0, 0, 0.75 );
     position: fixed;
+    /* margin-top: 5%; */
     bottom: 0;
     z-index: 100;
 }
@@ -27,7 +28,7 @@ h4 {
 
 .linkedin-icon,
 .github-icon {
-    width: 20px;
+    width: 13px;
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(216deg) brightness(108%) contrast(101%);
     margin:0px 5px 0px 5px;
 }
