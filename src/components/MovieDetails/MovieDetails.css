@@ -1,4 +1,3 @@
-
 .movie-details-container {
     display: flex;
     flex-direction: column;
@@ -7,33 +6,40 @@
     font-family: 'Italiana', serif;
     background-color: rgba( 0, 0, 0, 0.5 );
     position: relative;
+    /* margin: 10px; */
 }
 
 .movie-details { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     position: absolute;
     color: whitesmoke;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .movie-title {
-    position: absolute;
-    top: -20%;
+    /* position: absolute; */
+    font-size: 60px;
+    /* top: -20%; */
     white-space: nowrap;
+    margin-bottom: 2px;
+    margin-top: 10%;
 }
 
-.movie-overview,
+.info {
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+
 .release-date,
 .genre,
 .runtime,
 .average-rating,
 .budget {
     margin-bottom: 10px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -42,16 +48,32 @@
 }
 
 .movie-trailer {
+    box-shadow: 0 1px 20px 5px rgb( 0, 0, 0 );
     position: absolute;
-    top: 56%;
-    margin: 0;
-    box-shadow: 0 1px 20px 2px rgb( 0, 0, 0 );
+    top: 37rem;
+}
+
+.select-different-trailer-container {
+    /* margin-bottom: 80%; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+    position: absolute;
+    top: 61rem;
+    bottom: 50%;
+}
+
+.movie-trailer-buttons {
+    margin-bottom: 50px;
 }
 
 .poster-image {
     height: 100vh;
     width: 100vw;
-    filter: brightness(40%);
+    filter: brightness(45%);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 @media screen and (min-width: 1500px) {
@@ -99,7 +121,7 @@
 
 @media screen and (max-width: 1500px) {
     iframe {
-        width: 400px;
-        height: 300px;
+        width: 800px;
+        height: 450px;
     }
 }

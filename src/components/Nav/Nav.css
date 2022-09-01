@@ -3,9 +3,9 @@ button {
   font-family: 'Italiana', serif;
   font-size: 20px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 35px;
   padding: 3px;
-  width: 175px;
+  width: 150px;
   border-radius: 10px;
   background-color: black;
   color: whitesmoke;
@@ -23,9 +23,10 @@ button:active {
   display: flex;
   align-items: center;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.85);
-  height: 5rem;
-  position: sticky;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 10%;
+  width: 100%;
+  position: fixed;
   top: 0;
   z-index: 100;
 }
@@ -42,7 +43,7 @@ button:active {
   margin-right: auto;
   color: whitesmoke;
   text-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 /* .nav-home-button:active {
