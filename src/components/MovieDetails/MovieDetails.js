@@ -9,7 +9,8 @@ class MovieDetails extends React.Component {
             {
                 id: selectedMovie.selectedMovie,
                 movieSelected: '',
-                selectedMovieTrailer: ''
+                movieTrailers: [ ],
+                selectedMovieTrailer: { }
             }
     }
     
@@ -20,8 +21,13 @@ class MovieDetails extends React.Component {
 
         fetchData( `/movies/${ this.state.id }/videos` )
         .then( data => data.videos )
-        .then( videos => this.setState( { selectedMovieTrailer: videos[ 0 ] } ) )
+		.then( videos => this.setState( { movieTrailers: videos } ) )
+        .then( ( ) => this.setState( { selectedMovieTrailer: this.state.movieTrailers[ 0 ] } ) )
     }  
+
+    selectDifferentTrailer = ( videos ) => {
+		this.setState( { selectedMovieTrailer: videos } )
+	}
 
     render( ) {
 
@@ -51,6 +57,16 @@ class MovieDetails extends React.Component {
                         allowFullScreen
                         title="Embedded youtube"/>
                 </div>
+
+                {/* THERE'S A BUG YOU HIT THE BACK BUTTON IT MORPHS THE TRAILER AND DOESN'T RETURN TO THE HOME PAGE */}
+				<div className='select-different-trailer-container'>
+					{ this.state.movieTrailers.length > 1 && this.state.movieTrailers.map( trailer => <button 
+						key={ `${trailer.id}` } 
+						onClick={ ( ) => this.selectDifferentTrailer( trailer ) }
+						className='movie-trailer-buttons'>
+							{ `${ trailer.type }` }
+						</button> ) }
+				</div>
                 
             </div> 
         )
