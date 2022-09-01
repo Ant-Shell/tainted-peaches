@@ -6,7 +6,8 @@ const MovieCard = ( { title, posterPath, id, displaySingleMovie, toggleHomeButto
   return (
     <div className='individual-movie-card' key={ id }>
       <Link to={ `/${ id }` }>
-      <img 
+      <img
+        id={ id } 
         className='movie-card-image' 
         src={ posterPath } 
         alt={ `Movie poster for ${ title }` }
