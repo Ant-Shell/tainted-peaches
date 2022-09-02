@@ -13,7 +13,7 @@ describe('Main movie card display page', () => {
 						}
 					)
 		.get( 'h1' )
-		.should( 'contain', 'Our Appologies, but our servers are temorarily down. Plesae try again later.' )
+		.should( 'contain', 'Our apologies, but our servers are temporarily down. Please try again later.' )
 	} );
 
   it('Should have a nav bar', () =>{
