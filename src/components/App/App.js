@@ -31,10 +31,15 @@ class App extends React.Component {
         this.setState( { homeButton: true } )
     }
 
-  render( ) {
-
+    
+    render( ) {
+      
     const returnHome = ( ) => {
       this.setState( { homeButton: false } )
+    }
+
+    const showReturnHomeButton = ( ) => {
+      this.setState( { homeButton: true } )
     }
     
     return (
@@ -42,20 +47,20 @@ class App extends React.Component {
       <div className='app-container'>
 
           <Nav 
-            homeButton={ this.state.homeButton } 
-            returnHome={ returnHome }/>
+            homeButton={ this.state.homeButton }/>
           <Switch>
             <Route exact path="/:id" render={ ( { match } ) => <MovieDetails 
                 selectedMovie={ match.params.id }
+                showReturnHomeButton={ showReturnHomeButton }
               />
             }/>
 
             <Route exact path="/" render={ ( ) => <MovieCardsCollection 
                 movieCards={ this.state.movieCards }
-                displaySingleMovie={ this.displaySingleMovie }/>
+                displaySingleMovie={ this.displaySingleMovie }
+                returnHome={ returnHome } />
             }/>         
           </Switch>
-
         <Footer />
       </div>
   

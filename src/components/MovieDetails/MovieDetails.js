@@ -4,17 +4,19 @@ import fetchData from '../../apiCalls.js'
 
 class MovieDetails extends React.Component {
 	constructor(  selectedMovie  ) {
-		super(  selectedMovie  );
+		super( );
 		this.state = 
 			{
 				id: selectedMovie.selectedMovie,
 				movieSelected: '',
 				movieTrailers: [ ],
-				selectedMovieTrailer: { }
+				selectedMovieTrailer: { },
 			}
 	}
     
 	componentDidMount = ( ) => {
+		this.props.showReturnHomeButton( );
+
 		fetchData( `/movies/${ this.state.id }` )
 		.then( data => data.movie )
 		.then( movie => this.setState( { movieSelected: movie } ) )
@@ -25,14 +27,14 @@ class MovieDetails extends React.Component {
 		.then( ( ) => this.setState( { selectedMovieTrailer: this.state.movieTrailers[ 0 ] } ) )
 	}  
 
-    selectDifferentTrailer = ( videos ) => {
-		this.setState( { selectedMovieTrailer: videos } )
+    selectDifferentTrailer = ( video ) => {
+		this.setState( { selectedMovieTrailer: video } )
 	}
 
     render( ) {
 
 			if( !this.state.movieSelected ) {
-				return ( <h1 className='error-message'>Our Appologies, but our servers are temorarily down. Plesae try again later.</h1> )
+				return ( <h1 className='error-message'>Our apologies, but our servers are temporarily down. Please try again later.</h1> )
 			} else {
 			return ( 
 				<div className='movie-details-container'>
@@ -42,7 +44,6 @@ class MovieDetails extends React.Component {
 						className='poster-image'/>
 							<div className='movie-details'>                        
 								<h1 className='movie-title'>{ this.state.movieSelected.title }</h1>
-									{/* <h2 className="movie-overview">Movie Overview:</h2> */}
 									<p className="info">{ this.state.movieSelected.overview }</p>
 									<p className="release-date">Release Date: { this.state.movieSelected.release_date }</p>
 									<p className="genre">Genre: { this.state.movieSelected.genres.length > 1 ? ( this.state.movieSelected.genres ).join( ' - ' ) : this.state.movieSelected.genres }</p>
@@ -51,27 +52,27 @@ class MovieDetails extends React.Component {
 									{ this.state.movieSelected.budget > 0 && <p className="budget">Budget: ${ parseInt( this.state.movieSelected.budget ).toLocaleString( ) }</p> }
 							</div>
 							
+							{ this.state.selectedMovieTrailer &&
 							<div className='movie-trailer'>
 								<iframe
-									src={ this.state.selectedMovieTrailer && `https://www.youtube.com/embed/${ this.state.selectedMovieTrailer.key }`}
+									src={ this.state.selectedMovieTrailer && `https://www.youtube.com/embed/${ this.state.selectedMovieTrailer.key }` }
 									frameBorder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									allowFullScreen
 									title="Embedded youtube"/>
-							</div>
+							</div> }
 
-							{/* THERE'S A BUG YOU HIT THE BACK BUTTON IT MORPHS THE TRAILER AND DOESN'T RETURN TO THE HOME PAGE */}
 							<div className='select-different-trailer-container'>
 								{ this.state.movieTrailers.length > 1 && this.state.movieTrailers.map( trailer => <button 
-									key={ `${trailer.id}` } 
+									key={ `${ trailer.id }` } 
 									onClick={ ( ) => this.selectDifferentTrailer( trailer ) }
 									className='movie-trailer-buttons'>
 										{ `${ trailer.type }` }
 									</button> ) }
 							</div>
 				</div> 
-        )
-    }
+            )
+        }
 	}
 
 }

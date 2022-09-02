@@ -1,7 +1,12 @@
 import './MovieCardsCollection.css'
 import MovieCard from '../MovieCard/MovieCard'
+import { useEffect } from 'react'
 
-const MovieCardsCollection = ( { movieCards, displaySingleMovie } ) => {
+const MovieCardsCollection = ( { movieCards, displaySingleMovie, returnHome } ) => {
+
+  useEffect( ( ) => {
+    returnHome( )
+  }, [ ] )
 
   const movieCard = movieCards.map( card => {
     return (
@@ -17,7 +22,7 @@ const MovieCardsCollection = ( { movieCards, displaySingleMovie } ) => {
 
   return (
     <div className="movie-card-collection">
-      { movieCards.length ? movieCard : <h1 className='error-message'>Our Appologies, but our servers are temorarily down. Plesae try again later.</h1> }
+      { movieCards.length ? movieCard : <h1 className='error-message'>Our apologies, but our servers are temporarily down. Please try again later.</h1> }
     </div>
   )
 
