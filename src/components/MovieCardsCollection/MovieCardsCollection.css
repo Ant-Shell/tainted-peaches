@@ -8,7 +8,6 @@
 }
 
 .error-message {
-    font-family: 'Italiana', serif;
     background-color: rgba(0, 0, 0, 0.8);
     grid-column: 1 / -1;
     color: whitesmoke;
