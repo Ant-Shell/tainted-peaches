@@ -3,8 +3,8 @@ button {
   font-size: 20px;
   font-weight: bold;
   margin-right: 35px;
-  padding: 3px;
-  width: 150px;
+  padding: 6px;
+  width: auto;
   border-radius: 10px;
   background-color: black;
   color: whitesmoke;
