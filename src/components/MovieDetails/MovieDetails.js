@@ -34,7 +34,7 @@ class MovieDetails extends React.Component {
     render( ) {
 
 			if( !this.state.movieSelected ) {
-				return ( <h1 className='error-message'>Our apologies, but our servers are temporarily down. Please try again later.</h1> )
+				return ( <h1 className='details-error-message'>Our apologies, but our servers are temporarily down. Please try again later.</h1> )
 			} else {
 			return ( 
 				<div className='movie-details-container'>
@@ -48,7 +48,7 @@ class MovieDetails extends React.Component {
 									<p className="release-date">Release Date: { this.state.movieSelected.release_date }</p>
 									<p className="genre">Genre: { this.state.movieSelected.genres.length > 1 ? ( this.state.movieSelected.genres ).join( ' - ' ) : this.state.movieSelected.genres }</p>
 									<p className="runtime">Runtime: { this.state.movieSelected.runtime } minutes</p>
-									<p className="average-rating">Average Rating: { parseInt( this.state.movieSelected.average_rating ).toFixed( 1 ) }</p>
+									<p className="average-rating">Average Rating: { parseInt( this.state.movieSelected.average_rating ).toFixed( 1 ) }/10</p>
 									{ this.state.movieSelected.budget > 0 && <p className="budget">Budget: ${ parseInt( this.state.movieSelected.budget ).toLocaleString( ) }</p> }
 							</div>
 							
@@ -65,6 +65,7 @@ class MovieDetails extends React.Component {
 							<div className='select-different-trailer-container'>
 								{ this.state.movieTrailers.length > 1 && this.state.movieTrailers.map( trailer => <button 
 									key={ `${ trailer.id }` } 
+									src={ `https://www.youtube.com/embed/${ trailer.key }` }
 									onClick={ ( ) => this.selectDifferentTrailer( trailer ) }
 									className='movie-trailer-buttons'>
 										{ `${ trailer.type }` }

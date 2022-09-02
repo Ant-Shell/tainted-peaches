@@ -14,6 +14,7 @@
     align-items: center;
     position: absolute;
     color: whitesmoke;
+    text-shadow: 1px 6px 5px rgb( 0, 0, 0 );
 }
 
 .movie-title {
@@ -37,8 +38,8 @@
 .runtime,
 .average-rating,
 .budget {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 5px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -49,7 +50,7 @@
 .movie-trailer {
     box-shadow: 0 1px 20px 5px rgb( 0, 0, 0 );
     position: absolute;
-    top: 37rem;
+    top: 36rem;
 }
 
 .select-different-trailer-container {
@@ -64,6 +65,7 @@
 
 .movie-trailer-buttons {
     margin-bottom: 50px;
+    margin-top: auto;
 }
 
 .poster-image {
@@ -73,6 +75,15 @@
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.details-error-message {
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+    grid-column: 1 / -1;
+    color: whitesmoke;
+    text-shadow: 0 0 25px rgb(255, 105, 180);
+    text-align: center;
 }
 
 @media screen and (min-width: 1500px) {
