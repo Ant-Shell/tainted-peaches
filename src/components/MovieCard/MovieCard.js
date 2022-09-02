@@ -1,7 +1,7 @@
 import './MovieCard.css'
 import { Link } from 'react-router-dom';
 
-const MovieCard = ( { title, posterPath, id, displaySingleMovie, toggleHomeButton } ) => {
+const MovieCard = ( { title, posterPath, id, displaySingleMovie } ) => {
   
   return (
     <div className='individual-movie-card' key={ id }>
