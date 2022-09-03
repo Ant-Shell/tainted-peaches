@@ -6,7 +6,7 @@ const MovieCardsCollection = ({ movieCards, displaySingleMovie, returnHome }) =>
 
   useEffect(() => {
     returnHome()
-  }, [returnHome])
+  }, [ ])
 
   const movieCard = movieCards.map(card => {
     return (

@@ -49,7 +49,7 @@ class App extends React.Component {
             showReturnHomeButton={showReturnHomeButton}
           />
           } />
-          <Route path="/" render={() => <MovieCardsCollection
+          <Route exact path="/" render={() => <MovieCardsCollection
             movieCards={this.state.movieCards}
             displaySingleMovie={this.displaySingleMovie}
             returnHome={returnHome} />
