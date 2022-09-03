@@ -16,11 +16,11 @@ describe('Main movie card display page', () => {
 		.should( 'contain', 'Our apologies, but our servers are temporarily down. Please try again later.' )
 	} );
 
-  it('Should have a nav bar', () =>{
+  it('Should have a nav bar', () => {
     cy.get('.navbar')
   })
 
-  it('Should display the logo',  () => {
+  it('Should display the logo', () => {
     cy.get('.tainted-peach-image')
   })
 
@@ -28,7 +28,7 @@ describe('Main movie card display page', () => {
     cy.contains("Tainted Peaches")
   })
 
-  it('Should populate the page with all of the movies', () =>{
+  it('Should populate the page with all of the movies', () => {
     cy.get('.individual-movie-card')
   })
 
@@ -42,12 +42,12 @@ describe('Main movie card display page', () => {
 
   it('Should be able to click a movie', () => {
     cy.get('img[id=694919]')
-    .click()
+      .click()
   })
 
   it('Should be able to go back to main page by clicking back button', () => {
     cy.go('back')
-    .url().should("include", "/")
+      .url().should("include", "/")
   })
 
   it('Should not have a Take Me Home button', () => {
@@ -68,7 +68,7 @@ describe('Main movie card display page', () => {
     cy.get('.github-icon')
   })
 
-  it ('Should have links', () => {
+  it('Should have links', () => {
     cy.get('[href="https://www.linkedin.com/in/jordan-farelli/"]')
     cy.get('[href="https://github.com/jfarelli"]')
     cy.get('[href="https://www.linkedin.com/in/anthonyshellman/"]')

@@ -2,7 +2,7 @@ import './Footer.css'
 import linkedInIcon from '../../assets/linkedin.png'
 import gitHubIcon from '../../assets/github.png'
 
-const Footer = ( ) => {
+const Footer = () => {
   return (
     <div className="footer-container">
       <div className='jordan-container'>
@@ -11,19 +11,19 @@ const Footer = ( ) => {
           href='https://www.linkedin.com/in/jordan-farelli/'
           target="_blank"
           rel="noreferrer">
-          <img 
-            src={ linkedInIcon }
+          <img
+            src={linkedInIcon}
             alt='linkedin-icon'
-            className='linkedin-icon'/>
+            className='linkedin-icon' />
         </a>
-        <a 
+        <a
           href='https://github.com/jfarelli'
           target="_blank"
           rel="noreferrer">
-          <img 
-            src={ gitHubIcon }
+          <img
+            src={gitHubIcon}
             alt='github-icon'
-            className='github-icon'/>
+            className='github-icon' />
         </a>
       </div>
 
@@ -33,19 +33,19 @@ const Footer = ( ) => {
           href='https://www.linkedin.com/in/anthonyshellman/'
           target="_blank"
           rel="noreferrer">
-          <img 
-            src={ linkedInIcon }
+          <img
+            src={linkedInIcon}
             alt='linkedin-icon'
-            className='linkedin-icon'/>
+            className='linkedin-icon' />
         </a>
         <a
           href='https://github.com/Ant-Shell'
           target="_blank"
           rel="noreferrer">
-          <img 
-            src={ gitHubIcon }
+          <img
+            src={gitHubIcon}
             alt='github-icon'
-            className='github-icon'/>
+            className='github-icon' />
         </a>
       </div>
     </div>

@@ -11,7 +11,7 @@ h4 {
     align-items: center;
     height: 30px;
     width: 100vw;
-    background-color: rgba( 0, 0, 0, 0.75 );
+    background-color: rgba(0, 0, 0, 0.75);
     position: fixed;
     margin-top: auto;
     bottom: 0;
@@ -29,6 +29,5 @@ h4 {
 .github-icon {
     width: 13px;
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(216deg) brightness(108%) contrast(101%);
-    margin:0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
 }
-

@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background-image: url( '../src/assets/cinema-background.jpg' );
+  background-image: url('../src/assets/cinema-background.jpg');
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
 }

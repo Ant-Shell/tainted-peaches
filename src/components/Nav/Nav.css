@@ -13,8 +13,8 @@ button {
 }
 
 button:active {
-  color: rgb( 240, 46, 170 );
-  border: 2px solid rgb( 240, 46, 170 );
+  color: rgb(240, 46, 170);
+  border: 2px solid rgb(240, 46, 170);
   box-shadow: rgba(245, 245, 245, 0.4) 0px 5px, rgba(245, 245, 245, 0.3) 0px 10px, rgba(245, 245, 245, 0.2) 0px 15px, rgba(245, 245, 245, 0.1) 0px 20px, rgba(245, 245, 245, 0.05) 0px 25px;
 }
 
@@ -34,8 +34,7 @@ button:active {
   height: 100%;
   border-radius: 50px;
   margin-right: 10px;
-  box-shadow: 0 0 25px rgb( 240, 46, 170 );
-  /* box-shadow: #FF69B4 0px 2px 70px 4px;; */
+  box-shadow: 0 0 25px rgb(240, 46, 170);
 }
 
 .nav-title {
@@ -44,12 +43,6 @@ button:active {
   text-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
   font-size: 50px;
 }
-
-/* .nav-home-button:active {
-  background-color: black;
-  color: whitesmoke;
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-} */
 
 .hidden {
   display: none;
