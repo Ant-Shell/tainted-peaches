@@ -3,32 +3,26 @@
 ## We gots movies!
 ​
 ### Table of contents
-* [Setting Up](#setup)
 * [How To Use](#how)
-* [Under The Hood](#under) OPTIONAL, but good for learning 
 * [Challenges](#challenges)
 * [Reflections](#reflections)
 * [Future Iterations](#future)
 * [Technologies Used](#tech)
 * [Contributors](#contributors)
 ​
-### Setting Up: <a name="setup"></a>
-​
-* On the top right corner of this page, click the **Fork** button to fork this repo.
-* Clone down the forked repo by clicking the green **Code** button, and then copying the link under **SSH**.
-* In your terminal, type in `git clone` and then paste the copied link.
-* Once you have cloned the repo, change into the directory and install the project dependencies, by running `npm install`.
-* Run `npm start` in the terminal, and copy the URL link (`http://localhost:8080/`) to see the HTML page 
-* To stop running the server, use Control + C in the terminal. (Closing the terminal without stopping the server first could allow the server to continue to run in the background and cause problems.)
-* Click a movie poster for details on what you'll want to watch next!
-​
 ### How To Use: <a name="how"></a>
 ​
-* Please visit our site to check out functionality
+* Please visit our app:
+* From the main page, a user can scroll through the movie selection.
+* The user can then click any movie of their choosing and see that movies details and movie trailers.
+* The user can either select the **'Take Me Home'** button to return to the main page, and also their browser's navigation tools.
+
 ​
 https://user-images.githubusercontent.com/100455148/188279941-fbef9c4e-1a71-420a-ad23-c8f597513d8d.mov
+
 ​
 <br>
+
 ​
 ### Challenges: <a name="challenges"></a>
 * This project brought many challenges, as it was our first deep-dive into creating a working app using the React framework. We learned new concepts and how the flow of React works with class and functional based components. 
@@ -36,12 +30,14 @@ https://user-images.githubusercontent.com/100455148/188279941-fbef9c4e-1a71-420a
 
 ​
 <br>
+
 ​
 ### Reflections: <a name="reflections"></a>
 * This project was a great learning experience to further solidify the concepts and the in’s and out’s of React.
 * Passing props between components is a learning curve, but awesome once you get hang of it.
 ​
 <br>
+
 ​
 ### Future Iterations: <a name="future"></a>
 * Search functionality
@@ -51,6 +47,7 @@ https://user-images.githubusercontent.com/100455148/188279941-fbef9c4e-1a71-420a
 
 ​
 <br>
+
 ​
 ### Technologies Used:<br><a name="tech"></a>
 React<br>
@@ -62,6 +59,7 @@ Cypress<br>
 Router(v5)<br>
 ​
 <br>
+
 ​
 ### Contributors: <a name="contributors"></a>
 ​
