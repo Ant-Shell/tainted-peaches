@@ -21,22 +21,22 @@ class App extends React.Component {
 
   componentDidMount = () => {
     fetchData('/movies')
-      .then(data => this.setState({ ...this.state, movieCards: data.movies }))
+      .then(data => this.setState({ movieCards: data.movies }))
   }
 
   displaySingleMovie = (id) => {
     const singleMovie = this.state.movieCards.find(movie => movie.id === id)
-    this.setState({ ...this.state, movieSelected: singleMovie })
-    this.setState({ ...this.state, homeButton: true })
+    this.setState({ movieSelected: singleMovie })
+    this.setState({ homeButton: true })
   }
 
   render() {
     const returnHome = () => {
-      this.setState({ ...this.state, homeButton: false })
+      this.setState({ homeButton: false })
     }
 
     const showReturnHomeButton = () => {
-      this.setState({ ...this.state, homeButton: true })
+      this.setState({ homeButton: true })
     }
 
     return (
@@ -44,12 +44,12 @@ class App extends React.Component {
         <Nav
           homeButton={this.state.homeButton} />
         <Switch>
-          <Route exact path="/:id" render={({ match }) => <MovieDetails
+          <Route exact path="/tainted-peaches/:id" render={({ match }) => <MovieDetails
             selectedMovie={match.params.id}
             showReturnHomeButton={showReturnHomeButton}
           />
           } />
-          <Route exact path="/" render={() => <MovieCardsCollection
+          <Route exact path="/tainted-peaches" render={() => <MovieCardsCollection
             movieCards={this.state.movieCards}
             displaySingleMovie={this.displaySingleMovie}
             returnHome={returnHome} />
