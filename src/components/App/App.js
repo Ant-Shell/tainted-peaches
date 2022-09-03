@@ -21,22 +21,22 @@ class App extends React.Component {
 
   componentDidMount = () => {
     fetchData('/movies')
-      .then(data => this.setState({ movieCards: data.movies }))
+      .then(data => this.setState({ ...this.state, movieCards: data.movies }))
   }
 
   displaySingleMovie = (id) => {
     const singleMovie = this.state.movieCards.find(movie => movie.id === id)
-    this.setState({ movieSelected: singleMovie })
-    this.setState({ homeButton: true })
+    this.setState({ ...this.state, movieSelected: singleMovie })
+    this.setState({ ...this.state, homeButton: true })
   }
 
   render() {
     const returnHome = () => {
-      this.setState({ homeButton: false })
+      this.setState({ ...this.state, homeButton: false })
     }
 
     const showReturnHomeButton = () => {
-      this.setState({ homeButton: true })
+      this.setState({ ...this.state, homeButton: true })
     }
 
     return (
