@@ -14,8 +14,18 @@
 
 * Please visit our app:
 * From the main page, a user can scroll through the movie selection.
+
+https://user-images.githubusercontent.com/97558758/188282405-9ccc9047-b6cd-4b26-8cec-3a1f2bcca612.mov
+
 * The user can then click any movie of their choosing and see that movies details and movie trailers.
+
+https://user-images.githubusercontent.com/97558758/188282418-734534dc-9ec9-4ea6-946b-399808157c91.mov
+
+https://user-images.githubusercontent.com/97558758/188282433-481efe18-3fde-439b-a9e3-08b4b34b1b0a.mov
+
 * The user can either select the **'Take Me Home'** button to return to the main page, and also their browser's navigation tools.
+
+https://user-images.githubusercontent.com/97558758/188282462-fccf4822-6301-46f3-afce-91421d128941.mov
 
 ### Challenges: <a name="challenges"></a>
 * This project brought many challenges, as it was our first deep-dive into creating a working app using the React framework. We learned new concepts and how the flow of React works with class and functional based components. 
