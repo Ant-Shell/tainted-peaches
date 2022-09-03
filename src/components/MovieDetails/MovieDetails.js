@@ -19,16 +19,16 @@ class MovieDetails extends React.Component {
 
 		fetchData(`/movies/${this.state.id}`)
 			.then(data => data.movie)
-			.then(movie => this.setState({ ...this.state, movieSelected: movie }))
+			.then(movie => this.setState({ movieSelected: movie }))
 
 		fetchData(`/movies/${this.state.id}/videos`)
 			.then(data => data.videos)
-			.then(videos => this.setState({ ...this.state, movieTrailers: videos }))
-			.then(() => this.setState({ ...this.state, selectedMovieTrailer: this.state.movieTrailers[0] }))
+			.then(videos => this.setState({ movieTrailers: videos }))
+			.then(() => this.setState({ selectedMovieTrailer: this.state.movieTrailers[0] }))
 	}
 
 	selectDifferentTrailer = (video) => {
-		this.setState({ ...this.state, selectedMovieTrailer: video })
+		this.setState({ selectedMovieTrailer: video })
 	}
 
 	render() {
