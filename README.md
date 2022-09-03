@@ -17,8 +17,7 @@
 * The user can then click any movie of their choosing and see that movies details and movie trailers.
 * The user can either select the **'Take Me Home'** button to return to the main page, and also their browser's navigation tools.
 
-![Movie Clip](https://user-images.githubusercontent.com/100455148/188279941-fbef9c4e-1a71-420a-ad23-c8f597513d8d.mov
-))
+https://user-images.githubusercontent.com/100455148/188281897-5a53dde4-bb85-4141-a751-4d4bc7c65e3d.mov
 
 <br>
 
