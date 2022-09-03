@@ -23,7 +23,7 @@
 
 ### Reflections: <a name="reflections"></a>
 * This project was a great learning experience to further solidify the concepts and the in’s and out’s of React.
-* Passing props between components is a learning curve, but awesome once you get hang of it.
+* Passing props between components is a learning curve, but awesome once you get the hang of it.
 
 ### Future Iterations: <a name="future"></a>
 * Search functionality
