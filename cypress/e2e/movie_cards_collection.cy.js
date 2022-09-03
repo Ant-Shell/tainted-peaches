@@ -4,17 +4,17 @@ describe('Main movie card display page', () => {
     cy.visit('http://localhost:3000/');
   })
 
-  it('Should show an error message on the page if the servers are down', () => {
-    cy.intercept(
-      'GET',
-      'https://rancid-tomatillos.herokuapp.com/api/v2/movies/',
-      {
-        statusCode: 401
-      }
-    )
-      .get('h1')
-      .should('contain', 'Our apologies, but our servers are temporarily down. Please try again later.')
-  });
+  it( 'Should show an error message on the page if the servers are down', ( ) => {
+		cy.intercept(
+						'GET',
+						'https://rancid-tomatillos.herokuapp.com/api/v2/movies/',
+						{
+							statusCode: 401
+						}
+					)
+		.get( 'h1' )
+		.should( 'contain', 'Our apologies, but our servers are temporarily down. Please try again later.' )
+	} );
 
   it('Should have a nav bar', () => {
     cy.get('.navbar')
