@@ -49,7 +49,7 @@ class App extends React.Component {
             showReturnHomeButton={showReturnHomeButton}
           />
           } />
-          <Route exact path="/tainted-peaches" render={() => <MovieCardsCollection
+          <Route path="/" render={() => <MovieCardsCollection
             movieCards={this.state.movieCards}
             displaySingleMovie={this.displaySingleMovie}
             returnHome={returnHome} />
