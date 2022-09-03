@@ -3,12 +3,11 @@
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
-    background-color: rgba( 0, 0, 0, 0.5 );
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    /* margin: 10px; */
 }
 
-.movie-details { 
+.movie-details {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,9 +16,7 @@
 }
 
 .movie-title {
-    /* position: absolute; */
     font-size: 60px;
-    /* top: -20%; */
     white-space: nowrap;
     margin-bottom: 2px;
     margin-top: 10%;
@@ -30,7 +27,6 @@
     width: 90%;
     text-align: center;
 }
-
 
 .release-date,
 .genre,
@@ -43,20 +39,16 @@
 }
 
 .info {
-   font-weight: bold;
+    font-weight: bold;
 }
 
 .movie-trailer {
-    box-shadow: 0 1px 20px 5px rgb( 0, 0, 0 );
+    box-shadow: 0 1px 20px 5px rgb(0, 0, 0);
     position: absolute;
     top: 37rem;
 }
 
 .select-different-trailer-container {
-    /* margin-bottom: 80%; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start; */
     position: absolute;
     top: 61rem;
     bottom: 50%;
@@ -76,25 +68,25 @@
 }
 
 @media screen and (min-width: 1500px) {
-    h1  {
+    h1 {
         font-size: 50px;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    h1  {
+    h1 {
         font-size: 30px;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    h2  {
+    h2 {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    h2  {
+    h2 {
         font-size: 20px;
     }
 }
