@@ -41,13 +41,13 @@
 <br>
 
 ### Technologies Used:<br><a name="tech"></a>
-React<br>
-JavaScript<br>
-HTML<br>
-CSS<br>
-Fetch API<br>
-Cypress<br>
-Router(v5)<br>
+* React
+* JavaScript
+* HTML
+* CSS
+* Fetch API
+* Cypress
+* Router(v5)
 
 <br>
 
