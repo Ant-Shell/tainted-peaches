@@ -18,7 +18,8 @@
 * The user can either select the **'Take Me Home'** button to return to the main page, and also their browser's navigation tools.
 
 ​
-https://user-images.githubusercontent.com/100455148/188279941-fbef9c4e-1a71-420a-ad23-c8f597513d8d.mov
+![Movie Clip]([link to image / GIF](https://user-images.githubusercontent.com/100455148/188279941-fbef9c4e-1a71-420a-ad23-c8f597513d8d.mov
+))
 
 ​
 <br>
