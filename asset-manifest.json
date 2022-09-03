@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b8b2a08.css",
-    "main.js": "/static/js/main.bc94c0da.js",
-    "static/media/cinema-background.jpg": "/static/media/cinema-background.0142d2a441b36861ab51.jpg",
-    "static/media/github.png": "/static/media/github.22cfdd1cba253783ce51.png",
-    "static/media/tainted.jpeg": "/static/media/tainted.b2a10198cc7dac3e384c.jpeg",
-    "index.html": "/index.html",
-    "main.1b8b2a08.css.map": "/static/css/main.1b8b2a08.css.map",
-    "main.bc94c0da.js.map": "/static/js/main.bc94c0da.js.map"
+    "main.css": "/tainted-peaches/static/css/main.eec0b283.css",
+    "main.js": "/tainted-peaches/static/js/main.85a0706a.js",
+    "static/media/cinema-background.jpg": "/tainted-peaches/static/media/cinema-background.0142d2a441b36861ab51.jpg",
+    "static/media/github.png": "/tainted-peaches/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/tainted.jpeg": "/tainted-peaches/static/media/tainted.b2a10198cc7dac3e384c.jpeg",
+    "index.html": "/tainted-peaches/index.html",
+    "main.eec0b283.css.map": "/tainted-peaches/static/css/main.eec0b283.css.map",
+    "main.85a0706a.js.map": "/tainted-peaches/static/js/main.85a0706a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b8b2a08.css",
-    "static/js/main.bc94c0da.js"
+    "static/css/main.eec0b283.css",
+    "static/js/main.85a0706a.js"
   ]
 }
