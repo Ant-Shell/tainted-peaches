@@ -10,7 +10,7 @@ const Nav = ({ homeButton }) => {
         alt='tainted-peach-logo'
         className="tainted-peach-image" />
       <h1 className="nav-title">Tainted Peaches</h1>
-      <Link to={'/'}>{homeButton && <button>Take Me Home</button>}</Link>
+      <Link to={'/tainted-peaches'}>{homeButton && <button>Take Me Home</button>}</Link>
     </div>
   )
 }
