@@ -28,7 +28,6 @@ class MovieDetails extends React.Component {
 
 	selectDifferentTrailer = (video) => {
 		this.setState({ selectedMovieTrailer: video })
-		console.log( 'selectedMovieTrailer', this.state.selectedMovieTrailer)
 	}
 
 	render() {
