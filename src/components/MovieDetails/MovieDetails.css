@@ -1,12 +1,10 @@
 .movie-details-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    /* margin-bottom: auto; */
 }
 
 .movie-details {
@@ -30,7 +28,6 @@
     font-size: 20px;
     width: 90%;
     text-align: center;
-    /* margin-bottom: auto; */
     font-weight: bold;
 }
 

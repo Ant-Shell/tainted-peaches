@@ -13,9 +13,7 @@ h4 {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.75);
     position: fixed;
-    /* margin-top: auto; */
     bottom: 0;
-    /* z-index: 100; */
 }
 
 .jordan-container,
