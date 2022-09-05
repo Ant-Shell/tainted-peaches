@@ -51,28 +51,28 @@ describe('Individual Movie Details', () => {
 	it('should show ALL movie trailer options as buttons that a user can click to view', () => {
 		cy.get('.select-different-trailer-container')
 			.get('.movie-trailer-buttons').eq(0)
-			.should('have.attr', 'src')
+			.should('have.attr', 'url')
 			.should('include', '01ON04GCwKs')
 
 		cy.get('.select-different-trailer-container')
 			.get('.movie-trailer-buttons').eq(1)
-			.should('have.attr', 'src')
+			.should('have.attr', 'url')
 			.should('include', 'KK8FHdFluOQ')
 
 		cy.get('.select-different-trailer-container')
 			.get('.movie-trailer-buttons').eq(2)
-			.should('have.attr', 'src')
+			.should('have.attr', 'url')
 			.should('include', '1UXZEGYSwgg')
 
 		cy.get('.select-different-trailer-container')
 			.get('.movie-trailer-buttons').eq(3)
-			.should('have.attr', 'src')
+			.should('have.attr', 'url')
 			.should('include', 'R-eFm--k21c')
 
 		cy.get('.select-different-trailer-container')
 			.get('.movie-trailer-buttons').eq(4)
 			.last()
-			.should('have.attr', 'src')
+			.should('have.attr', 'url')
 			.should('include', 'bJbAZh3fv0g')
 	});
 });

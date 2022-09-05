@@ -115,14 +115,14 @@
 }
 
 @media screen and (min-width: 1500px) {
-    iframe {
+    .initial-trailer {
         width: 700px;
         height: 375px;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    iframe {
+    .initial-trailer {
         width: 553px;
         height: 360px;
     }

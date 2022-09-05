@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player/lazy';
 import './MovieDetails.css'
 import fetchData from '../../apiCalls.js'
 
@@ -52,17 +53,18 @@ class MovieDetails extends React.Component {
 					</div>
 					{this.state.selectedMovieTrailer &&
 						<div className='movie-trailer'>
-							<iframe
-								src={this.state.selectedMovieTrailer && `https://www.youtube.com/embed/${this.state.selectedMovieTrailer.key}`}
+							<ReactPlayer
+								url={this.state.selectedMovieTrailer && `https://www.youtube.com/embed/${this.state.selectedMovieTrailer.key}`}
 								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 								allowFullScreen
-								title="Embedded youtube" />
+								title="Embedded youtube"
+								className='initial-trailer' />
 						</div>}
 					<div className='select-different-trailer-container'>
 						{this.state.movieTrailers.length > 1 && this.state.movieTrailers.map(trailer => <button
 							key={`${trailer.id}`}
-							src={ `https://www.youtube.com/embed/${ trailer.key }` }
+							url={ `https://www.youtube.com/embed/${ trailer.key }` }
 							onClick={() => this.selectDifferentTrailer(trailer)}
 							className='movie-trailer-buttons'>
 							{`${trailer.type}`}
