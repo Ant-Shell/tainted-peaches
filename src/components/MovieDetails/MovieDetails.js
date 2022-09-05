@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player/lazy';
 import './MovieDetails.css'
 import fetchData from '../../apiCalls.js'
+import dayjs from 'dayjs';
 
 class MovieDetails extends React.Component {
 	constructor(selectedMovie) {
@@ -45,10 +46,10 @@ class MovieDetails extends React.Component {
 					<div className='movie-details'>
 						<h1 className='movie-title'>{this.state.movieSelected.title}</h1>
 						<p className="info">{this.state.movieSelected.overview}</p>
-						<p className="release-date">Release Date: {this.state.movieSelected.release_date}</p>
+						<p className="release-date">Release Date: { dayjs(this.state.movieSelected.release_date).format('MMMM D, YYYY')}</p>
 						<p className="genre">Genre: {this.state.movieSelected.genres.length > 1 ? (this.state.movieSelected.genres).join(' - ') : this.state.movieSelected.genres}</p>
 						<p className="runtime">Runtime: {this.state.movieSelected.runtime} minutes</p>
-						<p className="average-rating">Average Rating: {parseInt(this.state.movieSelected.average_rating).toFixed(1)}</p>
+						<p className="average-rating">Average Rating: {parseInt(this.state.movieSelected.average_rating).toFixed(1)} / 10</p>
 						{this.state.movieSelected.budget > 0 && <p className="budget">Budget: ${parseInt(this.state.movieSelected.budget).toLocaleString()}</p>}
 					</div>
 					{this.state.selectedMovieTrailer &&

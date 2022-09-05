@@ -29,7 +29,7 @@ describe('Individual Movie Details', () => {
 		cy.contains('Mulan')
 		cy.contains('When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.')
 		cy.contains('This movie is named Mulan.').should('not.exist')
-		cy.contains('Release Date: 2020-09-04')
+		cy.contains('Release Date: September 4, 2020')
 		cy.contains('Genre:')
 		cy.contains('Action')
 		cy.contains('Adventure')
