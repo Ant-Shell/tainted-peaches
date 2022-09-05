@@ -16,15 +16,15 @@ class MovieDetails extends React.Component {
 
 	componentDidMount = () => {
 		this.props.showReturnHomeButton();
-
+		let fetchedMovie;
 		fetchData(`/movies/${this.state.id}`)
 			.then(data => data.movie)
-			.then(movie => this.setState({ movieSelected: movie }))
-
-		fetchData(`/movies/${this.state.id}/videos`)
-			.then(data => data.videos)
-			.then(videos => this.setState({ movieTrailers: videos }))
-			.then(() => this.setState({ selectedMovieTrailer: this.state.movieTrailers[0] }))
+			.then(movie => fetchedMovie = movie)
+			.then(() => {
+				fetchData(`/movies/${this.state.id}/videos`)
+				.then(data => data.videos)
+				.then(videos => this.setState({ ...this.state, movieTrailers: videos, selectedMovieTrailer: this.state.movieTrailers[0], movieSelected: fetchedMovie  }))
+			})
 	}
 
 	selectDifferentTrailer = (video) => {

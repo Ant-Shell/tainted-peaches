@@ -12,7 +12,7 @@
 
 ### How To Use: <a name="how"></a>
 
-* Please visit our app:
+* Please visit our site: <a href="https://ant-shell.github.io/tainted-peaches/" target="_blank">Tainted Peaches</a>
 * From the main page, a user can scroll through the movie selection.
 
 https://user-images.githubusercontent.com/97558758/188282405-9ccc9047-b6cd-4b26-8cec-3a1f2bcca612.mov

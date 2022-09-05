@@ -8,7 +8,7 @@ describe('Individual Movie Details', () => {
 				fixtures: 'movieDetails.json'
 			}
 		)
-		cy.visit('http://localhost:3000/337401')
+		cy.visit('http://localhost:3000/tainted-peaches/337401')
 	});
 
 	it("Should start the user on the Main Page", () => {
@@ -21,7 +21,7 @@ describe('Individual Movie Details', () => {
 	});
 
 	it('Should display that the page is loading if it doesn\'t display immediately', () => {
-		cy.get('h1')
+		cy.get('.error-message')
 			.should('contain', 'Loading...')
 	});
 

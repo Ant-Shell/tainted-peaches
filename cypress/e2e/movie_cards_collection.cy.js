@@ -1,7 +1,7 @@
 
 describe('Main movie card display page', () => {
   it('Should load the page', () => {
-    cy.visit('http://localhost:3000/');
+    cy.visit('http://localhost:3000/tainted-peaches');
   })
 
   it( 'Should show an error message on the page if the servers are down', ( ) => {
