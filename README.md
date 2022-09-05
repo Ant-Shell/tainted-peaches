@@ -40,6 +40,7 @@ https://user-images.githubusercontent.com/97558758/188282462-fccf4822-6301-46f3-
 * Login
 * Add Ratings
 * Liking/Favoriting movies
+* Add <a href="https://reactjs.org/docs/typechecking-with-proptypes.html" target="_blank">PropTypes</a>
 
 ### Technologies Used:<br><a name="tech"></a>
 * React
