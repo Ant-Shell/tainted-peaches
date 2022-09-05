@@ -20,8 +20,8 @@ class App extends React.Component {
   }
 
   componentDidMount = () => {
-    fetchData('/movies')
-      .then(data => this.setState({ movieCards: data.movies }))
+    Promise.all( [ fetchData('/movies') ] )
+      .then(data => data.map( item => this.setState({ movieCards: item.movies })))
   }
 
   displaySingleMovie = (id) => {
