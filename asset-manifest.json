@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tainted-peaches/static/css/main.0d55df15.css",
-    "main.js": "/tainted-peaches/static/js/main.ccb8f9c5.js",
+    "main.css": "/tainted-peaches/static/css/main.e39a300f.css",
+    "main.js": "/tainted-peaches/static/js/main.022ff1a0.js",
     "reactPlayerYouTube.js": "/tainted-peaches/static/js/reactPlayerYouTube.34d49fba.chunk.js",
     "reactPlayerSoundCloud.js": "/tainted-peaches/static/js/reactPlayerSoundCloud.d98263cf.chunk.js",
     "reactPlayerVimeo.js": "/tainted-peaches/static/js/reactPlayerVimeo.dc653604.chunk.js",
@@ -19,8 +19,8 @@
     "static/media/github.png": "/tainted-peaches/static/media/github.22cfdd1cba253783ce51.png",
     "static/media/tainted.jpeg": "/tainted-peaches/static/media/tainted.b2a10198cc7dac3e384c.jpeg",
     "index.html": "/tainted-peaches/index.html",
-    "main.0d55df15.css.map": "/tainted-peaches/static/css/main.0d55df15.css.map",
-    "main.ccb8f9c5.js.map": "/tainted-peaches/static/js/main.ccb8f9c5.js.map",
+    "main.e39a300f.css.map": "/tainted-peaches/static/css/main.e39a300f.css.map",
+    "main.022ff1a0.js.map": "/tainted-peaches/static/js/main.022ff1a0.js.map",
     "reactPlayerYouTube.34d49fba.chunk.js.map": "/tainted-peaches/static/js/reactPlayerYouTube.34d49fba.chunk.js.map",
     "reactPlayerSoundCloud.d98263cf.chunk.js.map": "/tainted-peaches/static/js/reactPlayerSoundCloud.d98263cf.chunk.js.map",
     "reactPlayerVimeo.dc653604.chunk.js.map": "/tainted-peaches/static/js/reactPlayerVimeo.dc653604.chunk.js.map",
@@ -36,7 +36,7 @@
     "reactPlayerPreview.340c5261.chunk.js.map": "/tainted-peaches/static/js/reactPlayerPreview.340c5261.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d55df15.css",
-    "static/js/main.ccb8f9c5.js"
+    "static/css/main.e39a300f.css",
+    "static/js/main.022ff1a0.js"
   ]
 }
